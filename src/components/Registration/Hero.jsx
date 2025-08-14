@@ -20,9 +20,8 @@ const Hero = () => (
           Inscription
         </h1>
         <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-          Rejoignez la famille Bonheur d'Enfance ! Remplissez ce formulaire pour préinscrire 
-          votre enfant dans notre crèche maternelle à Cocody. Nous vous contacterons rapidement 
-          pour finaliser l'inscription.
+          Rejoignez la famille Bonheur d'Enfance ! Téléchargez rapidement le formulaire qui convient à votre enfant, imprimez-le et remplissez-le avec les informations demandées. Appelez-nous au +2250703066665 pour une prise de rendez-vous.
+          Vous pouvez nnous trouver sur YANGO ou GOOGLE MAPS en tapent "Crèche-garderie Bonheur d'Enfance" afin de vous rendre chez Bonheur d'Enfance sans souci.
         </p>
       </motion.div>
     </div>
