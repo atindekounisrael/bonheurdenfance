@@ -154,9 +154,7 @@ const Home = () => {
                   <img
                     className="w-full h-auto rounded-3xl shadow-2xl"
                     alt="Enfants heureux jouant dans une crèche moderne et colorée"
-                    src="public/assets/image4.jpg"
-                    onError={(e) => (e.target.src = 'https://github.com/atindekounisrael/bonheurdenfance/blob/main/public/assets/image4.jpg')}
-                  />
+                    src="/assets/image4.jpg"
                 </div>
                 {/* Decorative elements */}
                 <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full opacity-80 bounce-animation"></div>
