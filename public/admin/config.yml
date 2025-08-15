@@ -1,4 +1,4 @@
-# config.yml (place this in static/admin/config.yml)
+# config.yml (place this in public/admin/config.yml)
 
 backend:
   name: git-gateway
@@ -65,7 +65,7 @@ collections:
 
   - name: "services"
     label: "Services"
-    folder: "src/components/services" # Create this folder
+    folder: "src/pages/Services.jsx" # Create this file
     create: true
     slug: "{{slug}}"
     fields:
@@ -78,25 +78,17 @@ collections:
         name: "features"
         widget: "list"
         field: {label: "Feature", name: "feature", widget: "string"}
-
-  - name: "registration"
-    label: "Registration Page"
-    file: "src/pages/Registration.jsx"
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "text"}
-      # Add fields for benefits, FAQ, etc.
-      - label: "Benefits"
-        name: "benefits"
-        widget: "list"
-        fields:
-          - {label: "Icon", name: "icon", widget: "string"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "text"}
-      - label: "FAQ Items"
-        name: "faqItems"
-        widget: "list"
-        fields:
-          - {label: "Question", name: "question", widget: "string"}
-          - {label: "Answer", name: "answer", widget: "text"}
-
+          # Add fields for benefits, FAQ, etc.
+          - label: "Benefits"
+            name: "benefits"
+            widget: "list"
+            fields:
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "FAQ Items"
+            name: "faqItems"
+            widget: "list"
+            fields:
+              - {label: "Question", name: "question", widget: "string"}
+              - {label: "Answer", name: "answer", widget: "text"}
