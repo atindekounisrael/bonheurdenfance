@@ -35,7 +35,7 @@ const TestimonialCard = ({ testimonial, index }) => (
             <img
               className="w-12 h-12 rounded-full object-cover"
               alt={testimonial.image}
-              src="https://images.unsplash.com/photo-1644424235476-295f24d503d9" />
+              src="/assets/image23.jpg" />
           </div>
           <div>
             <div className="font-semibold text-gray-800">
