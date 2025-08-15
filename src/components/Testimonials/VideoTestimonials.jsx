@@ -53,7 +53,7 @@ const VideoTestimonials = () => (
                 <img
                   className="w-full h-48 object-cover"
                   alt="Aperçu vidéo témoignage parent crèche"
-                  src="https://images.unsplash.com/photo-1676664487686-d4cee5079c46" />
+                  src="/assets/image2.jpg" />
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                   <Button className="bg-white/90 text-gray-800 hover:bg-white rounded-full p-4">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
