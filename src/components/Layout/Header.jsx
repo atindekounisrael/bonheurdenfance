@@ -69,7 +69,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img
-              src="https://horizons-cdn.hostinger.com/36c93137-6c13-4684-bb1d-01a6ab1ce6f5/0b342ddd28f35103e90e426a35a9cf41.png"
+              src="public/assets/logo.png"
               alt="Logo Bonheur d'Enfance"
               className="h-16 object-contain"
             />
