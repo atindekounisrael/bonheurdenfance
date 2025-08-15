@@ -1,15 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Blog from './pages/Blog';
-import BlogPost from './pages/BlogPost';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from '@/App';
+import '@/index.css';
 
-const App = () => (
-  <BrowserRouter>
-    <Routes>
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/blog/:slug" element={<BlogPost />} />
-      {/* Ajoutez ici les autres routes existantes */}
-    </Routes>
-  </BrowserRouter>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );
-
-export default App;
