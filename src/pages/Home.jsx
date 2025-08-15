@@ -154,7 +154,7 @@ const Home = () => {
                   <img  
                     className="w-full h-auto rounded-3xl shadow-2xl"
                     alt="Enfants heureux jouant dans une crèche moderne et colorée"
-                   src="https://www.google.com/search?sca_esv=05e0918adac9b639&sxsrf=AE3TifPDmqiHKh7XlmGlYxYxJiiKryVcfA:1755292664982&udm=2&fbs=AIIjpHx4nJjfGojPVHhEACUHPiMQ_pbg5bWizQs3A_kIenjtcpTTqBUdyVgzq0c3_k8z34EAuM72an33lMW6RWde9ePJpwNFtZw3UQvFloZy04_0a7Y_s9Q2prhO8GUp_-RabNr9CETuwwgq6nGQDy-VqqXKL0HOQOtAVii-kozU-_QfMSU7AwBJQPe8uh3FT6qKJEnGjPGkKBoPM0rCLPYA77GKDAaqxA&q=bebe+noir&sa=X&sqi=2&ved=2ahUKEwj-wZfe3o2PAxWNLPsDHYHQMvEQtKgLegQICxAB&biw=1366&bih=607&dpr=1#vhid=icLIErjr784X9M&vssid=mosaic" />
+                   src="/assets/image4.jpg
                 </div>
                 {/* Decorative elements */}
                 <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full opacity-80 bounce-animation"></div>
