@@ -4,7 +4,7 @@ date: 2024-01-12T00:00:00Z
 author: "Mariam Diabaté"
 category: "Parentalité"
 excerpt: "Conseils pratiques pour faciliter l'adaptation de votre enfant à son nouvel environnement éducatif."
-image: "/assets/images/parent-premier-jour-creche.jpg"
+image: "public/assets/image10.jpg"
 tags:
   - adaptation
   - rentrée
