@@ -155,7 +155,6 @@ const Home = () => {
                     className="w-full h-auto rounded-3xl shadow-2xl"
                     alt="Enfants heureux jouant dans une crèche moderne et colorée"
                     src="/assets/images/image4.jpg"
-                    onError={(e) => (e.target.src = 'https://images.unsplash.com/photo-1619199059624-7335464ea7b0')}
                   />
                 </div>
                 {/* Decorative elements */}
