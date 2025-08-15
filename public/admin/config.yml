@@ -1,0 +1,101 @@
+# config.yml (place this in static/admin/config.yml)
+
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/Home.jsx" # Note: Since this is React, CMS will edit metadata or content sections; actual JSX might need manual integration.
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Title", name: "title", widget: "string", default: "Bonheur d'Enfance - Crèche Maternelle Privée à Cocody, Abidjan"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Hero Text", name: "heroText", widget: "text"}
+          - label: "Values"
+            name: "values"
+            widget: "list"
+            fields:
+              - {label: "Icon", name: "icon", widget: "string"} # e.g., Heart
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+          - label: "Activities"
+            name: "activities"
+            widget: "list"
+            fields:
+              - {label: "Icon", name: "icon", widget: "string"}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Color", name: "color", widget: "string"}
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog" # Create this folder to store MD files for blog posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Développement", "Parentalité", "Éducation", "Psychologie", "Activités", "Santé"]}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/content/testimonials" # Create this folder for MD files
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Text", name: "text", widget: "text"}
+      - {label: "Rating", name: "rating", widget: "number", value_type: "int", min: 1, max: 5}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Highlight", name: "highlight", widget: "string"}
+
+  - name: "services"
+    label: "Services"
+    folder: "src/content/services" # Create this folder
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Icon", name: "icon", widget: "string"} # e.g., BookOpen
+      - {label: "Color", name: "color", widget: "string"}
+      - {label: "Age", name: "age", widget: "string"}
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        field: {label: "Feature", name: "feature", widget: "string"}
+
+  - name: "registration"
+    label: "Registration Page"
+    file: "src/pages/Registration.jsx"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      # Add fields for benefits, FAQ, etc.
+      - label: "Benefits"
+        name: "benefits"
+        widget: "list"
+        fields:
+          - {label: "Icon", name: "icon", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+      - label: "FAQ Items"
+        name: "faqItems"
+        widget: "list"
+        fields:
+          - {label: "Question", name: "question", widget: "string"}
+          - {label: "Answer", name: "answer", widget: "text"}
