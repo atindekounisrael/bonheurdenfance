@@ -151,14 +151,16 @@ const Home = () => {
                 className="relative"
               >
                 <div className="relative z-10">
-                  <img  
+                  <img
                     className="w-full h-auto rounded-3xl shadow-2xl"
                     alt="Enfants heureux jouant dans une crèche moderne et colorée"
-                   src="/assets/image4.jpg
+                    src="/assets/images/image4.jpg"
+                    onError={(e) => (e.target.src = 'https://images.unsplash.com/photo-1619199059624-7335464ea7b0')}
+                  />
                 </div>
                 {/* Decorative elements */}
-                <div className="absolute-top-6-right-6 w-24 h-24 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full opacity-80 bounce-animation"></div>
-                <div className="absolute-bottom-6-left-6 w-32 h-32 bg-gradient-to-br from-green-300 to-blue-300 rounded-full opacity-80 bounce-animation" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full opacity-80 bounce-animation"></div>
+                <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-green-300 to-blue-300 rounded-full opacity-80 bounce-animation" style={{ animationDelay: '1s' }}></div>
               </motion.div>
             </div>
           </div>
@@ -370,8 +372,8 @@ const Home = () => {
                 </Link>
                 <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-purple-600 px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
                   <a href="https://agent.jotform.com/01988709aa62748f9aaabe8614aa7178710a" target="_self" rel="noopener noreferrer">
-                Nous contacter
-              </a>
+                    Nous contacter
+                  </a>
                 </Button>
               </div>
             </motion.div>
