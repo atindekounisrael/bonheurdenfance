@@ -93,3 +93,4 @@ collections:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "text"}
 
+
