@@ -25,8 +25,8 @@ collections:
               - {label: "Icon", name: "icon", widget: "string"} # e.g., Heart
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
-  - label: "Activities"
-    name: "activities"
+  - name: "activities"
+    label: "Activities"
     widget: "list"
             fields:
               - {label: "Icon", name: "icon", widget: "string"}
@@ -92,5 +92,6 @@ collections:
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "text"}
+
 
 
