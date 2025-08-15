@@ -14,7 +14,7 @@ const Blog = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
 
-  // Lire les fichiers Markdown dynamiquement avec Vite
+  // Charger les fichiers Markdown dynamiquement avec Vite
   const importAll = (r) => r.keys().map((key, index) => {
     const fileContents = r(key);
     const { data: frontmatter, content } = matter(fileContents.default);
@@ -41,11 +41,11 @@ const Blog = () => {
     }),
     readTime: blogPosts[0].readTime,
     category: blogPosts[0].frontmatter.category,
-    image: blogPosts[0].frontmatter.image || "public/assets/image9.jpg",
+    image: blogPosts[0].frontmatter.image || "https://images.unsplash.com/photo-1619199059624-7335464ea7b0",
     tags: blogPosts[0].frontmatter.tags || [],
   } : null;
 
-  // Calculer les catégories
+  // Calculer les catégories dynamiquement
   const categories = [
     { name: "Développement", count: blogPosts.filter(p => p.frontmatter.category === "Développement").length, color: "bg-pink-100 text-pink-600" },
     { name: "Parentalité", count: blogPosts.filter(p => p.frontmatter.category === "Parentalité").length, color: "bg-blue-100 text-blue-600" },
@@ -55,7 +55,7 @@ const Blog = () => {
     { name: "Santé", count: blogPosts.filter(p => p.frontmatter.category === "Santé").length, color: "bg-orange-100 text-orange-600" },
   ];
 
-  // Gérer la navigation vers les articles
+  // Gérer la navigation vers les articles individuels
   const handleReadMore = (slug) => {
     navigate(`/blog/${slug}`);
   };
