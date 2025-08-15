@@ -4,8 +4,8 @@ backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
 
-media_folder: static/img
-public_folder: /img
+media_folder: public/assets
+public_folder: /assets
 
 collections:
   - name: "pages"
@@ -35,7 +35,7 @@ collections:
 
   - name: "blog"
     label: "Blog Posts"
-    folder: "src/content/blog" # Create this folder to store MD files for blog posts
+    folder: "src/components/Blog" # Create this folder to store MD files for blog posts
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template
     fields:
@@ -52,7 +52,7 @@ collections:
 
   - name: "testimonials"
     label: "Testimonials"
-    folder: "src/content/testimonials" # Create this folder for MD files
+    folder: "src/components/Testimonials" # Create this folder for MD files
     create: true
     slug: "{{slug}}"
     fields:
@@ -65,7 +65,7 @@ collections:
 
   - name: "services"
     label: "Services"
-    folder: "src/content/services" # Create this folder
+    folder: "src/components/services" # Create this folder
     create: true
     slug: "{{slug}}"
     fields:
@@ -99,3 +99,4 @@ collections:
         fields:
           - {label: "Question", name: "question", widget: "string"}
           - {label: "Answer", name: "answer", widget: "text"}
+
