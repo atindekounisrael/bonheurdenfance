@@ -16,7 +16,7 @@ const PostCard = ({ post, onReadMore, index }) => (
         <img
           className="w-full h-48 object-cover"
           alt={post.image}
-          src="https://images.unsplash.com/photo-1702819073926-d9225ebd1760" />
+          src="/assets/image12.jpg" />
         <div className="absolute top-4 left-4">
           <span className={`px-3 py-1 rounded-full text-sm font-medium ${
             post.category === 'Développement' ? 'bg-pink-100 text-pink-600' :
