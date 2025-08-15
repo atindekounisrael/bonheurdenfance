@@ -26,14 +26,6 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
 
-  - name: "activities"
-    label: "Activities"
-    widget: "list"
-    fields:
-      - { label: "Icon", name: "icon", widget: "string" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Color", name: "color", widget: "string" }
-
   - name: "blog"
     label: "Blog Posts"
     folder: "src/components/Blog" # Create this folder to store MD files for blog posts
@@ -93,3 +85,4 @@ collections:
         fields:
           - { label: "Question", name: "question", widget: "string" }
           - { label: "Answer", name: "answer", widget: "text" }
+
