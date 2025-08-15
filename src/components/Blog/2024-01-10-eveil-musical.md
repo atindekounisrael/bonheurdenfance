@@ -4,7 +4,7 @@ date: 2024-01-10T00:00:00Z
 author: "Kouadio N'Guessan"
 category: "Éducation"
 excerpt: "Pourquoi la musique joue un rôle crucial dans le développement cognitif et émotionnel des jeunes enfants."
-image: "/assets/images/enfants-instruments-musique.jpg"
+image: "public/assets/image12.jpg"
 tags:
   - musique
   - éveil
