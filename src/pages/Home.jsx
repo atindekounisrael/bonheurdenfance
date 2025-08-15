@@ -157,7 +157,6 @@ const Home = () => {
                    src="/assets/image4.jpg
                 </div>
                 {/* Decorative elements */}
-                <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-300 to-orange-300 rounded-full opacity-80 bounce-animation"></div>
                 <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-green-300 to-blue-300 rounded-full opacity-80 bounce-animation" style={{ animationDelay: '1s' }}></div>
               </motion.div>
             </div>
