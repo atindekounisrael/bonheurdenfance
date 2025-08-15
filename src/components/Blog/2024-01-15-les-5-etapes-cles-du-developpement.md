@@ -4,7 +4,7 @@ date: 2024-01-15T00:00:00Z
 author: "Dr. Aïcha Konaté"
 category: "Développement"
 excerpt: "Découvrez les principales phases de développement cognitif, émotionnel et social que traverse votre enfant pendant ses années préscolaires."
-image: "/assets/images/enfant-apprenant-jouets.jpg"
+image: "public/assets/image1.jpg"
 tags:
   - développement
   - éducation
