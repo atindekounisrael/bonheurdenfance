@@ -31,7 +31,7 @@ const FeaturedPost = ({ post, onReadMore }) => (
               <img
                 className="w-full h-64 lg:h-full object-cover"
                 alt={post.image}
-                src="https://images.unsplash.com/photo-1619199059624-7335464ea7b0" />
+                src="/assets/image5.jpg" />
               <div className="absolute top-4 left-4">
                 <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-medium">
                   À la Une
