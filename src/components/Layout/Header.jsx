@@ -69,7 +69,7 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img
-              src="/public/assets/logo.png"
+              src="/assets/logo.png"
               alt="Logo Bonheur d'Enfance"
               className="h-16 object-contain"
             />
