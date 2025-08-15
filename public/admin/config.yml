@@ -25,9 +25,9 @@ collections:
               - {label: "Icon", name: "icon", widget: "string"} # e.g., Heart
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
-          - label: "Activities"
-            name: "activities"
-            widget: "list"
+  - label: "Activities"
+    name: "activities"
+    widget: "list"
             fields:
               - {label: "Icon", name: "icon", widget: "string"}
               - {label: "Title", name: "title", widget: "string"}
@@ -74,21 +74,22 @@ collections:
       - {label: "Icon", name: "icon", widget: "string"} # e.g., BookOpen
       - {label: "Color", name: "color", widget: "string"}
       - {label: "Age", name: "age", widget: "string"}
-      - label: "Features"
-        name: "features"
-        widget: "list"
+  - label: "Features"
+    name: "features"
+    widget: "list"
         field: {label: "Feature", name: "feature", widget: "string"}
           # Add fields for benefits, FAQ, etc.
-          - label: "Benefits"
-            name: "benefits"
-            widget: "list"
+  - label: "Benefits"
+    name: "benefits"
+    widget: "list"
             fields:
               - {label: "Icon", name: "icon", widget: "string"}
               - {label: "Title", name: "title", widget: "string"}
               - {label: "Description", name: "description", widget: "text"}
-          - label: "FAQ Items"
-            name: "faqItems"
-            widget: "list"
+  - label: "FAQ Items"
+    name: "faqItems"
+    widget: "list"
             fields:
               - {label: "Question", name: "question", widget: "string"}
               - {label: "Answer", name: "answer", widget: "text"}
+
