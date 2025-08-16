@@ -8,19 +8,19 @@ const RegistrationForm = () => {
   const files = [
     {
       text: "Fiche de Renseignement",
-      link: "https://drive.google.com/file/d/1fu2KT17pufw0JMWXoTh4JTw7cxhWJwRN/view?usp=drive_link"
+      link: "https://drive.google.com/uc?export=download&id=1fu2KT17pufw0JMWXoTh4JTw7cxhWJwRN"
     },
     {
       text: "Formulaire d'Inscription à la Crèche NIDO (6 mois à 18 mois)",
-      link: "https://drive.google.com/file/d/15U8CeIcYbIZbso6xlb8EjanRygFWv5ZI/view?usp=drive_link"
+      link: "https://drive.google.com/uc?export=download&id=15U8CeIcYbIZbso6xlb8EjanRygFWv5ZI"
     },
     {
       text: "Formulaire d'Inscription à la Toute Petite Section (2 ans à 3 ans)",
-      link: "https://drive.google.com/file/d/1z1tIzGwomB1-bmO7PacyUrOlSCbWGR2I/view?usp=drive_link"
+      link: "https://drive.google.com/uc?export=download&id=1z1tIzGwomB1-bmO7PacyUrOlSCbWGR2I"
     },
     {
       text: "Formulaire d'Inscription à la Maternelle (3 ans à 6 ans)",
-      link: "https://drive.google.com/file/d/1IIZvqPmqropuo5S2neKSSrN22-Pd_p8B/view?usp=drive_link"
+      link: "https://drive.google.com/uc?export=download&id=1IIZvqPmqropuo5S2neKSSrN22-Pd_p8B"
     }
   ];
 
@@ -46,7 +46,7 @@ const RegistrationForm = () => {
                 {files.map((file, index) => (
                   <div key={index} className="flex items-center justify-between bg-pink-50 p-4 rounded-xl">
                     <span className="text-gray-800 font-medium">{file.text}</span>
-                    <a href={file.link} target="_blank" rel="noopener noreferrer">
+                    <a href={file.link} download>
                       <Button className="bg-gradient-to-r from-pink-400 to-purple-400 hover:from-pink-500 hover:to-purple-500 text-white">
                         <Download className="w-4 h-4 mr-2" /> Télécharger
                       </Button>
